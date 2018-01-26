@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			body{
+				font-size: 12px;
+				font-family: "微软雅黑";
+			}
+			fieldset{
+				width: 520px;
+				margin: 0 auto;
+			}
+			label{
+				width: 70px;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<fieldset>
+			<legend>用户注册</legend>
+			<form action="reg.php" method="post">
+				<p>
+					<label for="username">用户名：</label>
+					<input type="text" name="username" id="username"/>
+					<span>(必填，3-15字符长度，支持汉字、字母、数字及_)</span>
+				</p>
+				<p>
+					<label for="password">密码：</label>
+					<input type="password" name="password" id="password"/>
+					<span>(必填，不得少于6位)</span>
+				</p>
+				<p>
+					<label for="repass">密码重复：</label>
+					<input type="password" name="repass" id="repass"/>
+				</p>
+				<p>
+					<label for="email">邮箱：</label>
+					<input type="text" name="email" id="email"/>
+					<span>(必填)</span>
+				</p>
+				<p>
+					<input type="submit" value="注册" name="submit" />
+				</p>
+			</form>
+		</fieldset>
+		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//表单验证-用户名
+			$(function(){
+				var bstop=true;//不通过
+				var usereg=/^([\u4e00-\u9fa5]|[\w\-]){3,15}$/;
+				$('#username').on('blur',function(){
+					var username=$(this).val();//获取用户名值
+					if(username!=''){//检测用户名是否为空
+						if(usereg.test(username)){//检测用户名是否满足正则
+							//将当前的用户名给后端，后端和数据库进行匹配，不管是否存在，后端返回结果
+							$.ajax({
+								type:'post',
+								url:'http://127.0.0.1/js1709/Day%2033/loginregistor/reg.php',
+								data:{
+									name:username//获取用户名给后端
+								},
+								success:function(d){
+									if(d){
+										$('#username').next('span').css('color','red').html('用户名已存在');
+										bstop=true;
+									}else{
+										$('#username').next('span').css('color','green').html('√');
+										bstop=false;
+									}
+								}
+							})
+						}else{
+							$(this).next('span').css('color','red').html('格式不正确');
+							bstop=true;
+						}
+					}else{
+						$(this).next('span').css('color','red').html('用户名不能为空');
+						bstop=true;
+					}
+				});
+
+
+				$('form').on('submit',function(){//验证不通过无法提交的
+					if(bstop){
+						return false;//阻止按钮跳转。
+					}
+				});
+			});
+		</script>
+	</body>
+</html>

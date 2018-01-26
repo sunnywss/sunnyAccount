@@ -1,0 +1,344 @@
+/*
+* @Author: Marte
+* @Date:   2018-01-11 21:18:02
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-01-18 23:26:50
+*/
+*{padding:0;margin:0;}
+html,body{width:100%;height:100%;}
+li{list-style:none;}
+a{text-decoration:none;color:#666}
+b{font-weight:normal}
+em,i{font-style:normal}
+img{border:0;display:block;}
+/*----------------------------header-nav-------------------------*/
+#header #header-nav{
+        background:#f5f5f5;
+        overflow:hidden;
+        line-height: 35px;
+        height: 35px;
+        border-bottom: 1px solid #eee;
+        width:100%;
+        }
+    #header #header-nav .left ul li{
+        float:left;
+        margin-right:20px;
+        }
+    #header #header-nav .left ul li b{
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border-color: #bbb transparent transparent;
+        border-width: 6px 4px;
+        border-style: solid dashed dashed;
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 16px;
+        right: 855px;
+        }
+    #header #header-nav .left ul li em{
+        font-style:normal;
+        }
+    #header #header-nav li{
+        color:#666;
+        margin-right:15px;
+        font-size:14px;
+        }
+    #header #header-nav li a{
+        font-size:14px;
+        color:#666;
+        }
+    #header #header-nav .left{
+        float:left;
+        }
+    #header #header-nav .right{
+        float:right;
+        }
+    #header #header-nav .right ul li{float:left;}
+    #header #header-nav .right ul li em{
+            float: left;
+            margin: 0 7px 0 0;
+            font-size: 14px;
+            width: 16px;
+            line-height: 35px;
+        }
+    #header #header-nav .right ul li:nth-of-type(6){padding-right:15px;}
+    #header #header-nav .right ul li:nth-of-type(6) .down{
+            display: inline-block;
+            color: #bbb;
+            width:10px;
+            position: absolute;
+            right: 212px;
+            top: 3px;
+            margin-right:5px;
+        }
+    #header #header-nav .right ul li:nth-of-type(6) b{margin-left:5px;}
+    #header #header-nav .right ul li:nth-of-type(2) a{color:#F60}
+    #header #header-nav .right ul li:nth-of-type(6) a{color:#F60}
+    #header #header-nav .right ul li:nth-of-type(9){margin-right:18px;}
+    #header #header-nav .right ul li:nth-of-type(9) em{
+            display: inline-block;
+            font-size: 10px;
+            width: 10px;
+            color: #bbb;
+            position:absolute;
+            top:3px;
+            right:0px;
+        }
+/*----------------------------header-logo-------------------------*/
+#header .logo .wrapper .first{float:left;}
+#header .logo .wrapper .second{
+            float:left;
+            border-left:1px solid #ccc;
+            margin-top:18px;
+            padding-left:20px;
+            position:absolute;
+            left:150px;
+            position: absolute;
+            left: 217px;
+            top: 2px;
+        }
+#header .logo .wrapper .first img{
+            width:190px;
+        }
+#header .logo .wrapper .second i{display:block;float:left;}
+#header .logo .wrapper .second img{float:left}
+#header .logo .wrapper .second h4{margin-bottom:10px;}
+
+#header .logo .wrapper .third{
+            float:right;
+            padding:10px;
+        }
+#header .logo .wrapper .third .p_F {
+            border:2px solid #f90;
+            margin-top:14px;
+            margin-right:200px;
+            padding:3px;
+            width:356px;
+        }
+#header .logo .wrapper .third .p_F input{border:0;}
+#header .logo .wrapper .third .p_F input:nth-of-type(1){
+            height:30px;
+            width:200px;
+        }
+#header .logo .wrapper .third .p_F input:nth-of-type(2){
+             color:#fff;
+             width:80px;
+             height:40px;
+             background:#ffbc35;
+             font-size:16px;
+             margin-left:100px;
+             position:absolute;
+            top: 24px;
+            right: 132px;
+        }
+#header .logo .wrapper .third .p_F input:nth-of-type(3){
+            color:#fff;
+             width:80px;
+             height:40px;
+             background:#000;
+             font-size:16px;
+            position:absolute;
+            top: 24px;
+            right: 45px;
+        }
+#header .logo .wrapper .third .butt a{
+            font-size:12px;
+            color:#999;
+        }
+#header .logo .wrapper .third .butt span{
+            font-size:12px;
+            color:#ddd;
+        }
+#header .header_B{
+            background:url(../img/x.jpg) no-repeat -260px;
+            width:100%;
+            height:120px;
+            text-align:center;
+        }
+#main .M_nav{
+            background:#000;
+        }
+#main .M_nav .wrapper .first,#main .M_nav .wrapper .second,#main .M_nav .wrapper .third{
+            font-size:16px;
+            color:#fff;
+            float:left;
+            text-align:center;
+            line-height:40px;
+        }
+#main .M_nav .wrapper .first{
+            width:145px;
+            margin-left:100px;
+        }
+#main .M_nav .wrapper .second{
+            padding:0 20px;
+        }
+#main .M_nav .wrapper .third{
+            padding:0 20px;
+        }
+/*------------------------------------left fangfajing-----------*/
+#main .wrapper .left{
+    float:left;
+    width: 401px;
+    //height: 520px;
+    z-index: 5;
+    //background:red;
+}
+
+.wrap {
+        width: 1000px;
+        height: 500px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    #spic {
+        width: 400px;
+        height: 400px;
+        border: 1px solid #000;
+        float: left;
+        position: relative;
+    }
+
+    #spic img {
+        width: 400px;
+        height: 400px;
+    }
+
+    #sf {
+        width: 50px;
+        height: 50px;
+        background: orange;
+        opacity: 0.3;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        visibility: hidden;
+    }
+
+    #bf {
+        width: 400px;
+        height: 500px;
+        border: 1px solid #000;
+        float: left;
+        overflow: hidden;
+        position: relative;
+        left: 10px;
+        visibility: hidden;
+    }
+
+    #bf img {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+
+    #ulist {
+        position: absolute;
+        left: 0px;
+        bottom: 15px;
+        width: 402px;
+        height: 56px;
+        overflow: hidden;
+    }
+
+    #ulist a {
+        float: left;
+        width: 10px;
+        height: 54px;
+        border: 1px solid #ccc;
+        text-decoration: none;
+        line-height: 56px;
+        text-align: center;
+        background: #fff;
+    }
+
+    #list {
+        float: left;
+        margin-left: 18px;
+        width: 372px;
+        position: relative;
+    }
+
+    ul {
+        list-style: none;
+        float: left;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        margin-left:30px;
+    }
+
+    ul li {
+        float: left;
+        width: 67px;
+        height: 67px;
+        padding-right: 6px;
+    }
+
+    ul li img {
+        width: 52px;
+        height: 52px;
+        border: 1px solid #ccc;
+    }
+
+    #right {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        color: #333;
+    }
+
+    #left {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 2;
+        color: #fff;
+    }
+
+
+
+#main .wrapper .right{
+    float:left;
+
+}
+/*------------------------iconfont class------------------------*/
+em.ng-iconfont .ng-backhome {
+            float: left;
+            display: inline-block;
+            font-size: 16px;
+            margin-right: 3px;
+            width: 16px;
+            line-height: 31px;
+    }
+/*----------------------------public class-----------------------*/
+.wrapper{
+          width:1190px;
+          margin:0 auto;
+          position:relative;
+       }
+.clear:after{
+            content:'.';
+            height:0;
+            overflow:hidden;
+            visibility:hidden;
+            display:block;
+            clear:both;
+        }
+
+
+        @font-face {
+          font-family: ng-iconfont;
+          src: url(../font/iconfont.eot?var=05);
+          src: url(../font/iconfont.eot?#iefix05) format("embedded-opentype"), url(../font/iconfont.woff?var=05) format("woff"), url(../font/iconfont.ttf?var=05) format("truetype"), url(../font/iconfont.svg#uxiconfont?var=05) format("svg");
+        }
+
+        .ng-iconfont {
+          display: inline-block;
+          font-family: ng-iconfont !important;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }

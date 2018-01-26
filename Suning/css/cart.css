@@ -1,0 +1,208 @@
+/*
+* @Author: Marte
+* @Date:   2018-01-14 22:34:51
+* @Last Modified by:   Marte
+* @Last Modified time: 2018-01-18 15:22:47
+* @charset="utf-8;
+*/
+* {
+  padding: 0;
+  margin: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+i, em {
+  font-style: normal; }
+
+img {
+  display: block;
+  border: 0; }
+
+input {
+  border: 0; }
+
+#header #header-nav {
+  background: #f5f5f5;
+  overflow: hidden;
+  line-height: 35px;
+  height: 35px;
+  border-bottom: 1px solid #eee;
+  width: 100%; }
+
+#header #header-nav .left ul li {
+  float: left;
+  margin-right: 20px; }
+
+#header #header-nav .left ul li b {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-color: #bbb transparent transparent;
+  border-width: 6px 4px;
+  border-style: solid dashed dashed;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 16px;
+  right: 855px; }
+
+#header #header-nav .left ul li em {
+  font-style: normal; }
+
+#header #header-nav li {
+  color: #666;
+  margin-right: 22px;
+  font-size: 14px; }
+
+#header #header-nav li a {
+  font-size: 14px;
+  color: #666; }
+
+#header #header-nav .left {
+  float: left; }
+
+#header #header-nav .right {
+  float: right; }
+
+#header #header-nav .right ul li {
+  float: left; }
+
+#header #header-nav .right ul li:nth-of-type(2) a {
+  color: #F60; }
+
+#header #header-nav .right ul li:nth-of-type(8) {
+  margin-right: 18px; }
+
+#header #header-nav .right ul li:nth-of-type(8) em {
+  display: inline-block;
+  font-size: 10px;
+  width: 10px;
+  color: #bbb;
+  position: absolute;
+  top: 0px;
+  right: 5px; }
+
+em.ng-iconfont.ng-backhome {
+  float: left;
+  display: inline-block;
+  font-size: 16px;
+  margin-right: 3px;
+  width: 16px;
+  line-height: 31px; }
+
+/*----------------------------main-----------------------*/
+#main {
+  margin-top: 20px; }
+
+#main .wrapper .tu {
+  width: 100%;
+  height: 60px; }
+
+#main .wrapper a img {
+  width: 190px;
+  float: left; }
+
+#main .wrapper .logo1 .inttput_b {
+  border: 2px solid #f50;
+  width: 431px;
+  height: 30px;
+  float: right;
+  margin-top: 40px;
+  position: relative; }
+
+#main .wrapper .logo1 .inttput_b input:nth-of-type(1) {
+  height: 30px;
+  width: 349px; }
+
+#main .wrapper .logo1 .inttput_b input:nth-of-type(2) {
+  width: 82px;
+  height: 32px;
+  background: #f50;
+  line-height: 32px;
+  font-size: 14px;
+  color: #fff;
+  position: absolute;
+  right: 0px;
+  top: 0px; }
+
+#main .wrapper .logo1 .inttput_b i {
+  float: left;
+  width: 25px;
+  height: 30px;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: right;
+  position: absolute;
+  top: -5px; }
+
+/*------------------------shopping car part---------------------------*/
+#main .wrapper .gouW {
+  wdith: 100%;
+  height: 500px; }
+
+#main .wrapper .gouW from {
+  display: block; }
+
+/*----------------------------footer part-----------------------*/
+#footer {
+  margin-top: 20px; }
+
+#footer .wrapper {
+  text-align: center;
+  height: 160px; }
+
+#footer .wrapper p {
+  display: inline-block;
+  font-size: 13px; }
+
+#footer .wrapper .B-first a {
+  color: #666;
+  line-height: 25px;
+  font-size: 13px; }
+
+#footer .wrapper .third {
+  color: #999; }
+
+#footer .wrapper .third i {
+  background: url(../img/jing.png) no-repeat;
+  position: absolute;
+  left: 552px;
+  top: 51px;
+  width: 20px;
+  height: 20px; }
+
+#footer .wrapper .div1 img {
+  display: inline;
+  margin-top: 12px; }
+
+/*----------------------------public class-----------------------*/
+.wrapper {
+  width: 1190px;
+  margin: 0 auto;
+  position: relative; }
+
+.clear:after {
+  content: '.';
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  display: block;
+  clear: both; }
+
+@font-face {
+  font-family: ng-iconfont;
+  src: url(../font/iconfont.eot?var=05);
+  src: url(../font/iconfont.eot?#iefix05) format("embedded-opentype"), url(../font/iconfont.woff?var=05) format("woff"), url(../font/iconfont.ttf?var=05) format("truetype"), url(../font/iconfont.svg#uxiconfont?var=05) format("svg"); }
+.ng-iconfont {
+  display: inline-block;
+  font-family: ng-iconfont !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*# sourceMappingURL=cart.css.map */

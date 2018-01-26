@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>苏宁易购网站</title>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script src="../js/jquery-1.11.3.js"></script>
+    <script src="../js/require.js" data-main="../js/main.js"></script>
+</head>
+<body>
+ <!-- /header -->
+        <div id="header">
+        <!-- 头部的那张图片 -->
+            <div id="header_top">
+                    <img src="../img/header_1.jpg" alt="图片未显示">
+                    <span class="span1">X</span>
+            </div>
+        <!-- 右边的侧边栏 -->
+                    <div id="aside">
+
+                    </div>
+
+        <!-- header-nav -->
+                <div id="header-nav">
+                    <div class="wrapper">
+                        <div class="left">
+                            <ul>
+                                <li>网站导航</li>
+                                <li><a href="https://sop.suning.com" target="_blank">商家入驻<em class="ng-iconfont down"></em></a></li>
+                                <li>客户服务</li>
+                                <li><a href="#"><i class="address-icon"></i>杭州</a><b class="arr"></b></li>
+                            </ul>
+                        </div>
+                        <div class="right">
+                            <ul>
+                                <li><a href="#">请登录</a></li>
+                                <li><a href="#">注册有礼</a></li>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的易购</a></li>
+                                <li><a href="#">苏宁会员</a></li>
+                                <li><a href="#"><em class="ng-iconfont cart"></em>购物车<b class="total-num J_cart_total_num" id="showTotalQty">0</b></a><em class="ng-iconfont down"></em></li>
+                                <li><a href="#">易付宝</a></li>
+                                <li><a href="#">企业采购</a></li>
+                                <li><a href="#">手机苏宁</a><em class="ng-iconfont down"></em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        <!-- logo那行 -->
+
+                <div class="wrapper clear">
+
+                    <div class="div1"><img src="../img/logo.png" alt=""></div>
+                    <div class="div2"><img src="../img/logo1.gif" alt=""></div>
+                    <div class="div3">
+                        <form action="suning_index_submit" method="get" accept-charset="utf-8">
+                            <div class="shuruK">
+                                    <i class="ng-iconfont search-icon"></i>
+                                    <input type="text" name="text" class="text" placeholder="洗衣机冰箱，每满1000减100">
+                                    <input type="submit" name="submit" class="submit" value="搜索">
+                            </div>
+                            <div class="smallNav">
+                                    <a name="public0_RSC_取暖器_0-0" target="_blank" href="http://search.suning.com/%E5%8F%96%E6%9A%96%E5%99%A8/">取暖器</a>
+                                    <a name="public0_RSC_热水器_1-0" target="_blank" href="http://search.suning.com/%E7%83%AD%E6%B0%B4%E5%99%A8/">热水器</a>
+                                    <a name="public0_RSC_iPhone_2-0" target="_blank" href="http://search.suning.com/iPhone/">iPhone</a>
+                                    <a name="public0_RSC_笔记本_3-0" target="_blank" href="http://search.suning.com/%E7%AC%94%E8%AE%B0%E6%9C%AC/">笔记本</a>
+                                    <a name="public0_RSC_海尔领券立减_4-0" target="_blank" href="http://search.suning.com/%E6%B5%B7%E5%B0%94%E9%A2%86%E5%88%B8%E7%AB%8B%E5%87%8F/">海尔领券立减</a>
+                                    <a name="public0_RSC_箱包直降100_5-0" target="_blank" href="http://search.suning.com/%E7%AE%B1%E5%8C%85%E7%9B%B4%E9%99%8D100/">箱包直降100</a>
+                                    <a name="public0_RSC_牛奶_6-0" target="_blank" href="http://search.suning.com/%E7%89%9B%E5%A5%B6/">牛奶</a>
+                                    <a name="public0_RSC_swisse_7-0" target="_blank" href="http://search.suning.com/swisse/">swisse</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="div4"><img src="../img/logo3.png" alt=""></div>
+                </div>
+                    <!-- 第二个小导航 -->
+                    <div class="wrapper">
+                        <div class="secondNav_left clear">
+                            <a href="#">
+                                <i></i>
+                                <span>全部商品分类</span>
+                            </a>
+                        </div>
+
+
+                        <div class="secondNav_center">
+                            <ul class="clear">
+                                <li><a href="#">大聚惠</a></li>
+                                <li><a href="#">红孩子</a></li>
+                                <li><a href="#">苏宁超市</a><i class="hot"></i></li>
+                                <li><a href="#">电器城</a></li>
+                                <li><a href="#">生活家电</a></li>
+                                <li><a href="#">时装服饰</a></li>
+                                <li><a href="#">海外购</a></li>
+                                <li><a href="#">特卖</a></li>
+                                <li><a href="#">苏宁金融</a></li>
+                                <li><a href="#">苏宁会员</a></li>
+                            </ul>
+                        </div>
+                        <div class="secondNav_right">
+                                <a href="#"><img src="../img/nav1.png" alt="图片未显示"></a>
+                        </div>
+                    </div>
+        </div>
+        <!-- /header -->
+
+        <!-- 内容部分 -->
+        <div id="content">
+            <div class="bg clear">
+                    <img class="left_p" src="../img/left_bg.png" alt="图片未显示">
+                    <img class="right_p" src="../img/right-bg.png" alt="图片未显示">
+            </div>
+
+
+<!-- ————————————————————————————————left_aside———————————————————————— -->
+            <div class="left_aside" style="z-index:1000">
+                <div class="box">
+                    <div class="tu"></div>
+                    <ul>
+                        <!-- <li>手机电脑</li>
+                        <li>家用电器</li>
+                        <li>数码汽车</li>
+                        <li>生活家装</li> -->
+                        <li class="active">好货推荐</li>
+                        <li>苏宁特卖</li>
+                        <li>热门手机</li>
+                        <li>家用电器</li>
+                        <li>智能数码</li>
+                        <li>猜你喜欢</li>
+                        <li class="aside-last">top</li>
+                    </ul>
+                </div>
+            </div>
+<!-- ————————————————————————————————change picture———————————————————————— -->
+                <div class="change_picture">
+<!-- ————————————————————————————————树状导航———————————————————————— -->
+                    <div class="shuN">
+                           <ul>
+                               <li><i class="ng-iconfont"></i><a href="#">手机</a><em>/</em><a href="#">运营商</a><em>/</em><a href="#">智能数码</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">电视</a><em>/</em><a href="#">空调</a><em>/</em><a href="#">洗衣机</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">厨卫电器</a><em>/</em><a href="#">生活家电</a><em>/</em><a href="#">厨具</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">电脑办公</a><em>/</em><a href="#">相机</a><em>/</em><a href="#">DIY</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">家居</a><em>/</em><a href="#">家具</a><em>/</em><a href="#">家装</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">食品</a><em>/</em><a href="#">酒水</a><em>/</em><a href="#">生鲜</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">个护美妆</a><em>/</em><a href="#">纸品清洁</a><em>/</em><a href="#"></a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">母婴</a><em>/</em><a href="#">玩具</a><em>/</em><a href="#">车床</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">运动</a><em>/</em><a href="#">户外</a><em>/</em><a href="#">足球</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">男装</a><em>/</em><a href="#">女装</a><em>/</em><a href="#">内衣</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">鞋靴</a><em>/</em><a href="#">箱包</a><em>/</em><a href="#">钟表</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">汽车</a><em>/</em><a href="#">摩托车</a><em>/</em><a href="#">自行车</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">精品</a><em>/</em><a href="#">童书</a><em>/</em><a href="#">电子书</a></li>
+                               <li><i class="ng-iconfont"></i><a href="#">理财</a><em>/</em><a href="#">众筹</a><em>/</em><a href="#">分期</a></li>
+                           </ul>
+                    </div>
+<!-- ———————————————————————————————图片轮播———————————————————————— -->
+                  <div  class="pictureC clear">
+                     <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <ol>
+                        <li class="active">1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                    </ol>
+                    <a href="javascript:;" id="left"></a>
+                    <a href="javascript:;" id="right"></a>
+                  </div>
+                    <div class="hello">
+                        <img src="../img/right3.png" alt="图片未显示">
+                    </div>
+                </div>
+<div id="barfixed">
+    <div class="wrapper clear">
+            <div class="nnv5">
+                <ul class="clear">
+                    <li><a  class="five" href="../html/suning_login.html">请登录</a></li>
+                    <li><a href="../html/suning_register.html">注册有礼</a></li>
+                    <li><a href="../html/suning_cart.html"><em class="ng-iconfont cart"></em>购物车</a></li>
+                </ul>
+            </div>
+    </div>
+</div>
+<!-- ———————————————————————————————好货list———————————————————————— -->
+        <div class="top">
+            <img class="bbj" src="../img/left3.png" alt="图片未显示">
+        </div>
+         <div class="wrapper clear">
+                <div class="bigH clear">
+                    <div class="tulist">
+                        <ul class="clear">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul class="clear">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+<!-- ———————————————————————————————小的图片的切换———————————————————————— -->
+           <!--  <div class="hui clear">
+               <h5>大惠聚<i class="slogon"></i></h5>
+           </div>
+           <div class="min-change">
+
+           </div> -->
+<!-- ————————————————————————————————好货推荐———————————————————————— -->
+       <!--  <div class="haoH T-margin"> -->
+                <div class="clear louti">
+                <div class="zhiS haoH T-margin clear">
+                    <div class="first clear">
+                        <div class="left">
+                            <p>好货推荐</p>
+                            <div class="codeP">
+                                <div class="hide">
+                                    <a href="#">
+                                    <s></s>
+                                    <img src="https://image5.suning.cn/uimg/cms/img/149662771514054218.png" alt="图片已更改">
+                                    <span>手机扫一扫</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="clear">
+                                <li><a href="#">相机频道</a></li>
+                                <li><a href="#">智能数码频道</a></li>
+                                <li><a href="#">单反相机</a></li>
+                                <li><a href="#">摄影课堂</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="one">
+                            <a href="#">
+                            <div>
+                                <img src="https://image4.suning.cn/uimg/cms/img/151540240882418223.jpg" alt="图片已更改">
+                                <div class="inner">
+                                    <h4>智能数码潮品购</h4>
+                                    <p>新年红包任意疯抢</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="three">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="four">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+                 <div class="zhiS haoH2 T-margin clear">
+                    <div class="first clear">
+                        <div class="left">
+                            <p>好货推荐</p>
+                            <div class="codeP">
+                                <div class="hide">
+                                    <a href="#">
+                                    <s></s>
+                                    <img src="https://image5.suning.cn/uimg/cms/img/149662771514054218.png" alt="图片已更改">
+                                    <span>手机扫一扫</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="clear">
+                                <li><a href="#">相机频道</a></li>
+                                <li><a href="#">智能数码频道</a></li>
+                                <li><a href="#">单反相机</a></li>
+                                <li><a href="#">摄影课堂</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="one">
+                            <a href="#">
+                            <div>
+                                <img src="https://image4.suning.cn/uimg/cms/img/151540240882418223.jpg" alt="图片已更改">
+                                <div class="inner">
+                                    <h4>智能数码潮品购</h4>
+                                    <p>新年红包任意疯抢</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="three">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="four">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+
+<!-- ————————————————————————————————苏宁特卖———————————————————————— -->
+            <div class="clear louti">
+                <div class="zhiS suT T-margin clear">
+                    <div class="first clear">
+                        <div class="left">
+                            <p>苏宁特卖</p>
+                            <div class="codeP">
+                                <div class="hide">
+                                    <a href="#">
+                                    <s></s>
+                                    <img src="https://image5.suning.cn/uimg/cms/img/149662771514054218.png" alt="图片已更改">
+                                    <span>手机扫一扫</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="clear">
+                                <li><a href="#">相机频道</a></li>
+                                <li><a href="#">智能数码频道</a></li>
+                                <li><a href="#">单反相机</a></li>
+                                <li><a href="#">摄影课堂</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="one">
+                            <a href="#">
+                            <div>
+                                <img src="https://image4.suning.cn/uimg/cms/img/151540240882418223.jpg" alt="图片已更改">
+                                <div class="inner">
+                                    <h4>智能数码潮品购</h4>
+                                    <p>新年红包任意疯抢</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="three">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="four">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+                 <div class="zhiS suT2 T-margin clear">
+                    <div class="first clear">
+                        <div class="left">
+                            <p>苏宁特卖</p>
+                            <div class="codeP">
+                                <div class="hide">
+                                    <a href="#">
+                                    <s></s>
+                                    <img src="https://image5.suning.cn/uimg/cms/img/149662771514054218.png" alt="图片已更改">
+                                    <span>手机扫一扫</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="clear">
+                                <li><a href="#">相机频道</a></li>
+                                <li><a href="#">智能数码频道</a></li>
+                                <li><a href="#">单反相机</a></li>
+                                <li><a href="#">摄影课堂</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="one">
+                            <a href="#">
+                            <div>
+                                <img src="https://image4.suning.cn/uimg/cms/img/151540240882418223.jpg" alt="图片已更改">
+                                <div class="inner">
+                                    <h4>智能数码潮品购</h4>
+                                    <p>新年红包任意疯抢</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="three">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="four">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+<!-- ————————————————————————————————静态图片———————————————————————— -->
+                <div class="jingF T-margin clear">
+                    <a href="#"><img src="https://image.suning.cn/uimg/aps/material/151574348827953079.jpg" alt="图片未找到"></a>
+                    <a href="#"><img src="https://image1.suning.cn/uimg/cms/img/151565108861917188.jpg" alt="图片未找到"></a>
+                    <a href="#"><img src="https://image.suning.cn/uimg/aps/material/151566057529220174.jpg" alt="图片未找到"></a>
+
+                </div>
+<!-- ————————————————————————————————热门手机———————————————————————— -->
+              <div class="clear louti">
+                <div class="zhiS phoneR T-margin clear">
+                    <div class="first clear">
+                        <div class="left">
+                            <p>热门手机</p>
+                            <div class="codeP">
+                                <div class="hide">
+                                    <a href="#">
+                                    <s></s>
+                                    <img src="https://image5.suning.cn/uimg/cms/img/149662771514054218.png" alt="图片已更改">
+                                    <span>手机扫一扫</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="clear">
+                                <li><a href="#">相机频道</a></li>
+                                <li><a href="#">智能数码频道</a></li>
+                                <li><a href="#">单反相机</a></li>
+                                <li><a href="#">摄影课堂</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="one">
+                            <a href="#">
+                            <div>
+                                <img src="https://image4.suning.cn/uimg/cms/img/151540240882418223.jpg" alt="图片已更改">
+                                <div class="inner">
+                                    <h4>智能数码潮品购</h4>
+                                    <p>新年红包任意疯抢</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="three">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="four">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+                 <div class="zhiS computer T-margin clear">
+                    <div class="first clear">
+                        <div class="left">
+                            <p>热门手机</p>
+                            <div class="codeP">
+                                <div class="hide">
+                                    <a href="#">
+                                    <s></s>
+                                    <img src="https://image5.suning.cn/uimg/cms/img/149662771514054218.png" alt="图片已更改">
+                                    <span>手机扫一扫</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="clear">
+                                <li><a href="#">相机频道</a></li>
+                                <li><a href="#">智能数码频道</a></li>
+                                <li><a href="#">单反相机</a></li>
+                                <li><a href="#">摄影课堂</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="one">
+                            <a href="#">
+                            <div>
+                                <img src="https://image4.suning.cn/uimg/cms/img/151540240882418223.jpg" alt="图片已更改">
+                                <div class="inner">
+                                    <h4>智能数码潮品购</h4>
+                                    <p>新年红包任意疯抢</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="three">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="four">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+<!-- ————————————————————————————————静态图片2———————————————————————— -->
+                <div class="jingC T-margin">
+                    <a href="#"><img src="https://image5.suning.cn/uimg/cms/img/151575694464092238.jpg" alt="图片未显示"></a>
+                </div>
+<!-- ————————————————————————————————家用电器———————————————————————— -->
+            <div class="clear louti">
+                <div class="zhiS jiaD T-margin clear">
+                        <div class="first clear">
+                            <div class="left">
+                                <p>家用电器</p>
+                                <div class="codeP">
+                                    <div class="hide">
+                                        <a href="#">
+                                        <s></s>
+                                        <img src="https://image5.suning.cn/uimg/cms/img/149662771514054218.png" alt="图片已更改">
+                                        <span>手机扫一扫</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <ul class="clear">
+                                    <li><a href="#">相机频道</a></li>
+                                    <li><a href="#">智能数码频道</a></li>
+                                    <li><a href="#">单反相机</a></li>
+                                    <li><a href="#">摄影课堂</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="one">
+                            <a href="#">
+                            <div>
+                                <img src="https://image4.suning.cn/uimg/cms/img/151540240882418223.jpg" alt="图片已更改">
+                                <div class="inner">
+                                    <h4>智能数码潮品购</h4>
+                                    <p>新年红包任意疯抢</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="three">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="four">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+                 <div class="zhiS jiaD1 T-margin clear">
+                        <div class="first clear">
+                            <div class="left">
+                                <p>家用电器</p>
+                                <div class="codeP">
+                                    <div class="hide">
+                                        <a href="#">
+                                        <s></s>
+                                        <img src="https://image5.suning.cn/uimg/cms/img/149662771514054218.png" alt="图片已更改">
+                                        <span>手机扫一扫</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <ul class="clear">
+                                    <li><a href="#">相机频道</a></li>
+                                    <li><a href="#">智能数码频道</a></li>
+                                    <li><a href="#">单反相机</a></li>
+                                    <li><a href="#">摄影课堂</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="one">
+                            <a href="#">
+                            <div>
+                                <img src="https://image4.suning.cn/uimg/cms/img/151540240882418223.jpg" alt="图片已更改">
+                                <div class="inner">
+                                    <h4>智能数码潮品购</h4>
+                                    <p>新年红包任意疯抢</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="three">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="four">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+<!-- ————————————————————————————————静态图片3———————————————————————— -->
+                <div class="jingT T-margin clear">
+                    <a href="#"><img src="https://image.suning.cn/uimg/aps/material/151496101433285766.jpg" alt="图片未显示"></a>
+                    <a href="#"><img src="https://image.suning.cn/uimg/aps/material/151503018657242726.jpg" alt="图片未显示"></a>
+                    <a href="#"><img src="https://image.suning.cn/uimg/aps/material/151459927405643952.jpg" alt="图片未显示"></a>
+                </div>
+<!-- ————————————————————————————————智能数码———————————————————————— -->
+            <div class="clear louti">
+                <div class="zhiS shu_N T-margin clear">
+                    <div class="first clear">
+                        <div class="left">
+                            <p>智能数码</p>
+                            <div class="codeP">
+                                <div class="hide">
+                                    <a href="#">
+                                    <s></s>
+                                    <img src="https://image5.suning.cn/uimg/cms/img/149662771514054218.png" alt="图片已更改">
+                                    <span>手机扫一扫</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="clear">
+                                <li><a href="#">相机频道</a></li>
+                                <li><a href="#">智能数码频道</a></li>
+                                <li><a href="#">单反相机</a></li>
+                                <li><a href="#">摄影课堂</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="one">
+                            <a href="#">
+                            <div>
+                                <img src="https://image4.suning.cn/uimg/cms/img/151540240882418223.jpg" alt="图片已更改">
+                                <div class="inner">
+                                    <h4>智能数码潮品购</h4>
+                                    <p>新年红包任意疯抢</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="three">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="four">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+                 <div class="zhiS car T-margin clear">
+                    <div class="first clear">
+                        <div class="left">
+                            <p>智能数码</p>
+                            <div class="codeP">
+                                <div class="hide">
+                                    <a href="#">
+                                    <s></s>
+                                    <img src="https://image5.suning.cn/uimg/cms/img/149662771514054218.png" alt="图片已更改">
+                                    <span>手机扫一扫</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <ul class="clear">
+                                <li><a href="#">相机频道</a></li>
+                                <li><a href="#">智能数码频道</a></li>
+                                <li><a href="#">单反相机</a></li>
+                                <li><a href="#">摄影课堂</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="one">
+                            <a href="#">
+                            <div>
+                                <img src="https://image4.suning.cn/uimg/cms/img/151540240882418223.jpg" alt="图片已更改">
+                                <div class="inner">
+                                    <h4>智能数码潮品购</h4>
+                                    <p>新年红包任意疯抢</p>
+                                </div>
+                            </a>
+                            </div>
+                        </div>
+                        <div class="two">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="three">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="four">
+                            <ul class="clear">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+
+<!-- ————————————————————————————————猜你喜欢———————————————————————— -->
+        <div class="box louti">
+            <div class="Title">
+                <span></span>猜你喜欢
+            </div>
+            <div class="yourLike clear T-margin">
+                    猜你喜欢
+            </div>
+        </div>
+
+            </div>
+        </div>
+
+<!-- /section -->
+        <div id="footer" class="T-margin">
+                <div class="footer-T">
+                    <div class="wrapper">
+                        <div class="tu clear">
+                            <dl>
+                                <dt><a href="#"><img src="../img/tu1.jpg" alt="图片未显示"></a></dt>
+                                <dd>
+                                    <h4>正品保障</h4>
+                                    <p>正品保障、提供发票</p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="../img/tu2.jpg" alt="图片未显示"></a></dt>
+                                <dd>
+                                    <h4>急速物流</h4>
+                                    <p>如约送货、送货入户</p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="../img/tu3.jpg" alt="图片未显示"></a></dt>
+                                <dd>
+                                    <h4>售后无忧</h4>
+                                    <p>退换无忧、维修无忧</p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="../img/tu4.jpg" alt="图片未显示"></a></dt>
+                                <dd>
+                                    <h4>特色服务</h4>
+                                    <p>私人定制家电套餐</p>
+                                </dd>
+                            </dl>
+                            <dl>
+                                <dt><a href="#"><img src="../img/tu5.jpg" alt="图片未显示"></a></dt>
+                                <dd>
+                                    <h4>帮助中心</h4>
+                                    <p>您的购物指南</p>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="T_nav clear">
+                            <dl>
+                                <dt><strong>购物指南</strong></dt>
+                                <dd><a href="#">导购演示</a></dd>
+                                <dd><a href="#">免费注册</a></dd>
+                                <dd><a href="#">会员等级</a></dd>
+                                <dd><a href="#">常见问题</a></dd>
+                                <dd><a href="#">品牌大全</a></dd>
+
+                            </dl>
+                            <dl>
+                                <dt><strong>支付方式</strong></dt>
+                                <dd><a href="#">苏宁支付</a></dd>
+                                <dd><a href="#">网银支付</a></dd>
+                                <dd><a href="#">分期付款</a></dd>
+                                <dd><a href="#">货到付款</a></dd>
+                                <dd><a href="#">任性付支付</a></dd>
+                                <dd><a href="#">快捷支付</a></dd>
+
+                            </dl>
+                            <dl>
+                                <dt><strong>物流配送</strong></dt>
+                                <dd><a href="#">免运费政策</a></dd>
+                                <dd><a href="#">配送服务承诺</a></dd>
+                                <dd><a href="#">签收验货</a></dd>
+                                <dd><a href="#">物流查询</a></dd>
+
+                            </dl>
+                            <dl>
+                                <dt><strong>售后服务</strong></dt>
+                                <dd><a href="#">退换货政策</a></dd>
+                                <dd><a href="#">退换货流程</a></dd>
+                                <dd><a href="#">购买延保服务</a></dd>
+                                <dd><a href="#">退款说明</a></dd>
+                                <dd><a href="#">退换货申请</a></dd>
+                                <dd><a href="#">维修/保养</a></dd>
+                            </dl>
+                            <dl>
+                                <dt><strong>商家服务</strong></dt>
+                                <dd><a href="#">商家入驻</a></dd>
+                                <dd><a href="#">培训中心</a></dd>
+                                <dd><a href="#">广告服务</a></dd>
+                                <dd><a href="#">商家帮助</a></dd>
+                                <dd><a href="#">服务市场</a></dd>
+                                <dd><a href="#">规则中心</a></dd>
+                            </dl>
+                            <dl class="last">
+                                <dt><strong>身边苏宁</strong></dt>
+                                <dd><a href="#">全国300个城市1600家门店3000个服务点为您提供最贴心的服务！</a></dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-B">
+                    <div class="wrapper">
+                        <p class="B-first">
+                            <a href="https://10035.suning.com/" target="_blank" name="public0_none_sn_hulian"> 苏宁互联</a>
+                            <span>|</span>
+                            <a href="https://jinrong.suning.com" target="_blank" name="public0_none_sn_jinrong">苏宁金融</a>
+                            <span>|</span>
+                            <a href="https://pay.suning.com/epp-epw/login/login.action?idsTrustFrom=suning&amp;ticket=ST1F1671F32556BC51442EB2ED516EB41D" target="_blank" name="public0_none_sn_zhifu1">苏宁支付</a>
+                            <span>|</span>
+                            <a href="https://www.pptv.com/?rcc_id=snyg" target="_blank" name="public0_none_sn_pptv">PPTV</a>
+                            <span>|</span>
+                            <a href="https://redbaby.suning.com/" target="_blank" name="public0_none_sn_redbaby">红孩子</a>
+                            <span>|</span>
+                            <a href="https://wuliu.suning.com/slp/" target="_blank" name="public0_none_sn_wuliu">苏宁物流</a>
+                            <span>|</span>
+                            <a href="https://cuxiao.suning.com/newUser.html" target="_blank" name="public0_none_sn_shouji">手机苏宁 </a>
+                            <span>|</span>
+                            <a href="https://www.suninghotel.com/shors-web/pc/hotel/index.html" target="_blank" name="public0_none_sn_jiudian">苏宁酒店</a>
+                            <span>|</span>
+                            <a href="https://ipp.suning.com/sips/toAgree.action" target="_blank" name="public0_none_sn_zhishi">知识产权举报</a>
+                        </p>
+                        <p class="B-first">
+                            <a href="#">联系我们</a><span>|</span>
+                            <a href="#">诚聘英才</a><span>|</span>
+                            <a href="#">供应商注入</a><span>|</span>
+                            <a href="#">广告平台</a><span>|</span>
+                            <a href="#">苏宁联盟</a><span>|</span>
+                            <a href="#">苏宁招标</a><span>|</span>
+                            <a href="#">友情链接</a><span>|</span>
+                            <a href="#">法律声明</a><span>|</span>
+                            <a href="#">用户体验提升计划</a><span>|</span>
+                            <a href="#">股东会员认证</a>
+                        </p>
+                        <p class="third">
+
+                            Copyright© 2002-2018 ，苏宁云商集团股份有限公司版权所有
+                            <span>|</span>
+                            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010202010078" rel="nofollow" style="color:#999" class="gwab"><i></i>　　苏公网安备 32010202010078号</a>
+                            <span>|</span>
+                            <a href="http://www.miitbeian.gov.cn" target="_blank" style="color:#999">苏ICP备10207551号-4</a>
+                            <span>|</span>
+                            <a href="//res.suning.cn/public/v3/images/SUB1-20130131.png" target="_blank" rel="nofollow" style="color:#999">苏B1-20130131</a>
+                        </p>
+                        <p class="third">
+                            <a href="//res.suning.cn/public/v3/images/SUB2-20130376.png" target="_blank" rel="nofollow" style="color:#999">苏B2-20130376</a>
+                            <span>|</span>
+                            <a href="//res.suning.cn/public/v3/images/SUB2-20130391.png" target="_blank" rel="nofollow" style="color:#999">苏B2-20130391</a>
+
+                            出版物经营许可证新出发苏批字第A-243号
+                            <span>|</span>
+
+                            互联网药品信息服务资格证书
+                            <a href="//res.suning.cn/public/v3/images/yaopin_content.jpg" target="_blank" rel="nofollow" style="color:#999">（苏）-非经营性-2016-0005</a>
+                        </p>
+                        <p class="ng-copyright third" style="display: block;">本网站直接或间接向消费者推销商品或者服务的商业宣传均属于“广告”（包装及参数、售后保障等商品信息除外）</p>
+                        <div class="div1">
+                            <a href="#"><img src="https://res.suning.cn/public/v3/images/chengxin.png" alt="图片未显示"></a>
+                            <a href="#"><img src="https://res.suning.cn/public/v3/images/unicom.png" alt="图片未显示"></a>
+                            <a href="#"><img src="https://res.suning.cn/public/v3/images/dianxin.jpg" alt="图片未显示"></a>
+                            <a href="#"><img src="https://res.suning.cn/public/v3/images/dianzi.png?v=02" alt="图片未显示"></a>
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+</body>
+</html>

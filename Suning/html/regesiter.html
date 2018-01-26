@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>regester</title>
+    <style>
+        *{margin: 0;padding: 0}
+        form{width: 400px;border: 3px solid black;margin: 10px auto;padding: 10px}
+        input{width:250px;height:50px;position: absolute;right: 0;border:0;padding-left: 5px;outline:none;}
+        label{width:350px;height:50px;border: 1px solid grey;display: block;position: relative;line-height:50px;margin: 2px 10px 2px;padding-left: 5px;letter-spacing: 2px }
+        .sub{position: relative;width: 94%;background: red;color: white;margin: 0 auto;font-size:26px;display: block}
+        .num{border-left:1px solid grey;height: 50px }
+        p{margin-top:-20px;height:20px;padding-left:20px ;color: grey;font-size: 13px}
+        span{position: absolute;right: 10px}
+    </style>
+</head>
+<body>
+<form action="">
+    <label>用 户 名<input type="text" placeholder="请输入用户名"><span></span></label><br>
+    <p></p>
+    <label>设置密码<input type="password"placeholder="建议使用至少两种字符组合"><span></span>
+    </label><br>
+    <p></p>
+    <label>确认密码<input type="password" placeholder="请再次输入密码"><span></span></label><br>
+    <p></p>
+    <label>中国0086<input type="text" class="num" placeholder="建议常用手机"><span></span></label><br>
+    <label>验 证 码<input type="text" placeholder="请输入验证码"><span></span></label><br>
+    <label>手机验证码<input type="text" placeholder="请输入验证码"><span></span></label><br>
+    <input type="submit" value="立即注册" class="sub">
+</form>
+<script type="text/javascript">
+    var input=document.querySelectorAll('input');
+    var span=document.querySelectorAll('span');
+    var p=document.querySelectorAll('p');
+    var btn = false;
+    /*用户名*/
+    var user=/^[\u4e00-\u9fa5a-zA-Z0-9_-]{4,16}$/;
+    input[0].onfocus=function(){
+        p[0].innerHTML='支持中文、字母、数字'
+    };
+    input[0].onblur=function(){
+        p[0].innerHTML='';
+        if(user.test(this.value)){
+            span[0].innerHTML='√';
+            span[0].style.color='green';
+            btn = true;
+        }else{
+            p[0].innerHTML='格式不正确';
+            p[0].style.color='red';
+            btn = false;
+        }
+    };
+    /*密码*/
+    var num=/\d+/;
+    var sign=/[\W\_]+/;
+    var letter=/[a-zA-Z]+/;
+    input[1].onfocus=function(){
+        p[1].innerHTML='建议使用至少两种字符组合'
+    };
+    var press=null;
+    input[1].oninput=function(){
+        var pass=input[1].value;
+        if(input[1].value.length<=20&&input[1].value.length>=8){
+            if(num.test(pass)&&sign.test(pass)&&letter.test(pass)){
+                press = 3;
+            }else if(num.test(pass)||sign.test(pass)||letter.test(pass)){
+                if(num.test(pass)&&sign.test(pass)){
+                    press = 2;
+                }else if(sign.test(pass)&&letter.test(pass)){
+                    press = 2;
+                }else if(num.test(pass)&&letter.test(pass)){
+                    press = 2;
+                }else{
+                    press=1;
+                }
+            }
+            switch (press){
+                case 1 : p[1].innerHTML='有被盗风险,建议使用字母、数字和符号两种及以上组合';p[1].style.color='blue';btn = true;break;
+                case 2 : p[1].innerHTML='安全强度适中，可以使用三种以上的组合来提高安全强度';p[1].style.color='blue';btn = true;break;
+                case 3 : p[1].innerHTML='你的密码很安全';p[1].style.color='blue';btn = true;break;
+            }
+        }else{
+            if(pass.length==0){
+                p[1].innerHTML='null!!!!';
+            }else if(input[1].value.length<8||input[1].value.length>20){
+                p[1].innerHTML='长度不符合要求，请重新输入';
+            }
+            p[1].style.color='red';
+            btn = false;
+        }
+    };
+    /*确认密码*/
+    /*手机号码*/
+    var tel= /^([A-Za-z0-9_\-])+([A-Za-z0-9_\-])+\.([A-Za-z]{2,4})$/;
+    input[3].onblur=function(){
+        if(tel.test(this.value)){
+            span[3].innerHTML='√';
+            span[3].style.color='green';
+            btn = true;
+        }
+    };
+
+    /*验证码*/
+    /*手机验证码*/
+    /*submit*/
+    input[6].onclick=function(){
+        if(btn){
+            location.href='http://www.baidu.com'
+        }
+    }
+</script>
+</body>
+</html>

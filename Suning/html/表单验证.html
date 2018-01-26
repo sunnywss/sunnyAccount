@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style type="text/css" media="screen">
+        *{margin:0;padding:0;}
+        #box{width:455px;height:590px;border:2px solid black;position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;}
+        input{height:51px;border:0;margin-left:125px;width:273px;}
+        span{display:block;font-size:13px;line-height:52px;width:114px;padding-left:10px;position:absolute;}
+        .button{height:54px;background:#ee2222;width:400px;border-radius:10px;text-align:center;font-size:16px;color:#fff;margin-left:1px;}
+        div{border:1px solid #dddddd;margin:15px 0 30px 26px;height:52px;width:398px;}
+        i{font-size:11px;color:#ddd;display:none;}
+    </style>
+</head>
+<body>
+    <section id="box">
+    <form action="考试_submit" method="get" accept-charset="utf-8">
+        <div>
+            <span>用户名</span>
+            <input type="text" name="username" placeholder="您的账户名和登录名">
+             <i>支持中文，字母，数字，'-' '_'的组合，4-20个字符</i><s></s>
+        </div>
+        <div>
+            <span>设置密码</span>
+            <input type="text" name="password" placeholder="建议至少使用两种字符组合">
+            <i>建议使用数字，字母和符号两种及以上的组合，6-20个字符</i><s></s>
+
+        </div>
+        <div>
+            <span>确认密码</span>
+            <input type="text" name="repassword" placeholder="请再次输入密码">
+            <i>请在再次输入密码</i><s></s>
+
+        </div>
+
+        <div>
+            <span>中国0086</span>
+            <input type="text" name="phone" placeholder="建议使用常用手机">
+            <i></i><s></s>
+
+        </div>
+        <div>
+            <span>验证码</span>
+            <input type="text" name="yancode" placeholder="请输入验证码">
+            <i></i>
+
+        </div>
+        <div>
+            <span>手机验证码</span>
+            <input type="text" name="phonecode" placeholder="请输入手机验证码">
+            <i></i>
+
+        </div>
+        <div style="border:0px;">
+            <input type="text" name="submit" value="立即注册" href="http://www.baidu.com" class="button">
+        </div>
+    </form>
+    </section>
+    <script type="text/javascript">
+    //获取元素
+        var oInput=document.getElementsByTagName('input');
+        var oDiv=document.getElementsByTagName('div');
+        var oI=document.getElementsByTagName('i');
+        var oS=document.getElementsByTagName('s');
+        //命名正则
+            var num=/\d+/;
+            var upplower=/[a-zA-Z]+/;
+            var other=/[\W\_]+/;
+            var count=0;
+            var oI0=/[[\u4e00-\u9fa5]*[a-z]*[A-z]*[0-9]*[-][_]]+/g;
+            var oI1=/[[\u4e00-\u9fa5]*[a-z]*[A-z]*[0-9]*]+/g;
+            var phone=/1[3,5,8][0-9]{9}/;
+
+        //第一个input得到光标时
+            oInput[0].onfocus=function()
+            {
+                oI[0].style.display='block';
+            }
+            oInput[0].onblur=function()
+            {
+                oI[0].style.display='none';
+               if(oI0.text(oInput[0].value))
+               {
+                    oS[0].innerHTML='√';
+                    oS[0].style.color='green';
+               }
+            }
+
+            oInput[1].onfocus=function()
+            {
+                oI[1].style.display='block';
+            }
+            oInput[1].onblur=function()
+            {
+                oI0.text(this.value)
+                oI[1].style.display='none';
+
+            }
+            oInput[2].onfocus=function()
+            {
+                oI[2].style.display='block';
+            }
+            oInput[2].onblur=function()
+            {
+                oI0.text(this.value)
+                oI[2].style.display='none';
+
+            }
+             oInput[3].onfocus=function()
+            {
+                oI[3].style.display='block';
+            }
+            oInput[3].onblur=function()
+            {
+                if(phone.text(this.value))
+                {
+                    oS[3].innerHTML='√';
+                    oS[3].style.color='green';
+                }
+                oI[3].style.display='none';
+            }
+    </script>
+</body>
+</html>
